@@ -37,6 +37,7 @@ if (isset($_POST['sub'])) {
     <meta charset="UTF-8">
     <title>Cadastro</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/reg.css">
 </head>
 
 <body>
@@ -97,14 +98,14 @@ if (isset($_POST['sub'])) {
 
                     <div class="row">
                         <div class="form-check col-md-7">
-                            <input class="form-check-input" type="radio" name="gen" id="gen" value="male">
+                            <input class="form-check-input" type="radio" name="gen" id="gen" value="masculino">
                             <label class="form-check-label" for="exampleRadios2">
                                 Masculino
                             </label>
                         </div>
 
                         <div class="form-check col-md-3">
-                            <input class="form-check-input" type="radio" name="gen" id="gen" value="female">
+                            <input class="form-check-input" type="radio" name="gen" id="gen" value="feminino">
                             <label class="form-check-label" for="exampleRadios2">
                                 Feminino
                             </label>

@@ -50,10 +50,11 @@ if (isset($_POST['sub'])) {
 
     <div class="login">
         <h1>Login</h1>
-        <form method="POST">
+        <form class="form" method="POST">
             <input type="text" name="user" placeholder="Usuário" required="required" />
             <input type="password" name="pass" placeholder="Senha" required="required" />
-            <input type="submit" name="sub" value="Login" class="btn btn-primary btn-block btn-large">
+            <input type="submit" name="sub" value="Login" class="btn btn-primary btn-block btn-large mb-2">
+            <a href="reg.php" class="link-light">I Have an acount</a>
         </form>
     </div>
 </body>

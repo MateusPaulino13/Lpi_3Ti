@@ -40,35 +40,69 @@ $f = mysqli_fetch_assoc($qu);
     </div>
   </nav>
   <!-- navbar -->
-
+  <!-- Table -->
   <div class="table-wrapper">
     <table class="fl-table">
       <thead>
         <tr>
-          <th>Name</th>
-          <th>User</th>
-          <th>Password</th>
-          <th>City</th>
-          <th>Gender</th>
-          <th>Image</th>
+          <th>
+            <h5>Name</h5>
+          </th>
+          <th>
+            <h5>User</h5>
+          </th>
+          <th>
+            <h5>Password</h5>
+          </th>
+          <th>
+            <h5>City</h5>
+          </th>
+          <th>
+            <h5>Gender</h5>
+          </th>
+          <th>
+            <h5>Image</h5>
+          </th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><?php echo $f["name"]; ?></td>
-          <td><?php echo $f["username"]; ?></td>
-          <td><?php echo $f["password"] . "<br>"; ?></td>
-          <td><?php echo $f["city"] . "<br>"; ?></td>
-          <td><?php echo $f["gender"] . "<br>"; ?></td>
+          <td>
+            <h5>
+              <?php echo $f["name"]; ?>
+              <h5>
+          </td>
+          <td>
+            <h5>
+              <?php echo $f["username"]; ?>
+            </h5>
+          </td>
+          <td>
+            <h5>
+              <?php echo $f["password"] . "<br>"; ?>
+            </h5>
+          </td>
+          <td>
+            <h5>
+              <?php echo $f["city"] . "<br>"; ?>
+            </h5>
+          </td>
+          <td>
+            <h5>
+              <?php echo $f["gender"] . "<br>"; ?> </h5>
+          </td>
           <td><img style="border-radius: 50%; width: 50px; height:50px" src="<?php echo $f["image"]; ?>"></td>
         </tr>
       <tbody>
     </table>
   </div>
+  <!-- Table -->
+  <!-- Buttons -->
   <div class="btns">
     <a href="editar.php" class="edit">Edit</a>
     <a href="deletar.php" class="del">Delete</a>
   </div>
+  <!-- Buttons -->
 </body>
 
 </html>
