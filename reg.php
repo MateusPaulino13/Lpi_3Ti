@@ -126,5 +126,3 @@ if (isset($_POST['sub'])) {
         </div>
     </form>
 </body>
-
-</html>

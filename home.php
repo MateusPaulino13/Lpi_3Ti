@@ -1,15 +1,15 @@
 <?php
-//inclui a conexão
-include "conexao.php";
+  //inclui a conexão
+  include "conexao.php";
 
-//seleciona o id
-$sessao = "SELECT * FROM reg WHERE id='$_SESSION[id]'";
+  //seleciona o id
+  $sessao = "SELECT * FROM reg WHERE id='$_SESSION[id]'";
 
-//prepara pra execução do query e do select
-$qu = mysqli_query($con, $sessao);
+  //prepara pra execução do query e do select
+  $qu = mysqli_query($con, $sessao);
 
-//retorna em tabelas ao usuario
-$f = mysqli_fetch_assoc($qu);
+  //retorna em tabelas ao usuario
+  $f = mysqli_fetch_assoc($qu);
 ?>
 <html>
 
@@ -34,7 +34,7 @@ $f = mysqli_fetch_assoc($qu);
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <a class="btn btn-success mr-3 my-2 my-sm-0 text-white" href="reg.php" role="button">Register</a>
+        <a class="btn btn-danger mr-3 my-2 my-sm-0 text-white" href="logoff.php" role="button">Sair</a>
         <a class="btn btn-success my-2 my-sm-0 text-white" href="login.php" role="button">Login</a>
       </form>
     </div>
